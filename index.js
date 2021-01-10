@@ -8,32 +8,32 @@ inquirer
 	.prompt([
 		{
 			type: "input",
-			message: "project name: ",
+			message: "Project Name: ",
 			name: "title",
 		},
 		{
 			type: "input",
-			message: "project description: ",
+			message: "Project Description: ",
 			name: "description",
 		},
 		{
 			type: "input",
-			message: "table of contents",
+			message: "Table of Contents",
 			name: "toc",
 		},
 		{
 			type: "input",
-			message: "installation",
+			message: "Installation: ",
 			name: "installation",
 		},
 		{
 			type: "input",
-			message: "usage",
+			message: "Usage: ",
 			name: "usage",
 		},
 		{
 			type: "credits",
-			message: "lisence",
+			message: "Lisence: ",
 			name: "lisence",
 		},
 	])
@@ -54,32 +54,28 @@ inquirer
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 			crossorigin="anonymous"
 		/>
-		<!-- font awesome -->
+        <!-- font awesome -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link 
+         href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+         rel="stylesheet">
 		<link rel="stylesheet" href="index.css" />
 	</head>
-	<body>
-		<h1>hello cruel world.</h1>
-		<h3>is ya girl, dumpster princess.</h3>
-
-		<h1>name: ${userData.title}</h1>
-		<h1>location: ${userData.description}</h1>
-		<h1>bio: ${userData.installation}</h1>
-		<h1>linkedin: ${userData.usage}</h1>
-		<h1>github: ${userData.input}</h1>
-        <h1>color: ${userData.credits}</h1>
-        
-        <h1>Project Name:</h1>
-        <h3>${userData.credits}</h3>
-        <h1>Description:</h1>
-        <h3>${userData.credits}</h3>
-        <h1>Table of Contents:<h1>
-        <h3>${userData.input}</h3>
-        <h1>Installation:</h1>
-        <h3> ${userData.input}</h3>
-        <h1>Usage:</h1>
-         ${userData.input}
-        <h1>Credits:</h1>
-         ${userData.input}
+    <body>
+        <h2><b>Project Name:</b></h2>
+        <p>${userData.title}</p>
+        <h2><b>Description:</b></h2>
+        <p>${userData.description}</p>
+        <h2><b>Table of Contents:</b></h2>
+        <p>${userData.toc}</p>
+        <h2><b>Installation:</b></h2>
+        <p>${userData.installation}</p>
+        <h2><b>Usage:</b></h2>
+        <p>${userData.usage}</p>
+        <h2><b>Credits:</b></h2>
+        <p>${userData.credits}</p>
+        <h2><b>Lisence:</b></h2>
+        <p>${userData.lisence}</p>
 	
 
 		<!-- jquery -->
@@ -104,7 +100,7 @@ inquirer
 `;
 		// console.log(userData);
 
-		fs.writeFile("index.html", myString, (err) =>
+		fs.writeFile("README.html", myString, (err) =>
 			err ? console.log(err) : console.log("commit logged!")
 		);
 	});
