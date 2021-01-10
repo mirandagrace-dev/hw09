@@ -1,9 +1,12 @@
 # hw09
 
 ##description
+AS A developer
+I WANT a README generator
+SO THAT I can quickly create a professional README for a new project
 
-##repository link
 https://github.com/mirandagrace-dev/hw09
+https://drive.google.com/file/d/1ilLl6up4jgwRCaDGJYezXObz2DRxE6sp/view
 
 ##usage
 GIVEN a command-line application that accepts user input

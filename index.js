@@ -1,4 +1,4 @@
-console.log("sup ya heathens");
+
 
 const fs = require("fs");
 const inquirer = require("inquirer");
@@ -34,7 +34,7 @@ inquirer
 		{
 			type: "credits",
 			message: "Lisence: ",
-			name: "lisence",
+            name: "lisence",
 		},
 	])
 	.then((response) => {
